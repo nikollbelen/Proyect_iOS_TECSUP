@@ -88,7 +88,7 @@ class Home2ViewController: UIViewController,UITableViewDataSource,UITableViewDel
         
         return usuarios.count
     }
-    
+    /*
     @IBAction func enviarMensajeTapped(_ sender: Any) {
         //let usuario = usuarios[indexPath.row]
         /*
@@ -107,7 +107,7 @@ class Home2ViewController: UIViewController,UITableViewDataSource,UITableViewDel
            // .child(user!.user.uid).setValue(mens)
         
         
-    }
+    }*/
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell

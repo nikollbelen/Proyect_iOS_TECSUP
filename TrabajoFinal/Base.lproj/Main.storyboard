@@ -56,10 +56,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bA0-IQ-djR">
-                                <rect key="frame" x="162" y="463" width="71" height="31"/>
+                                <rect key="frame" x="133" y="463" width="148" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Google"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Google">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="googleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YVQ-wt-9w7"/>
                                 </connections>
@@ -223,34 +226,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sfu-DN-AGN">
-                                <rect key="frame" x="6" y="56" width="408" height="229"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sfu-DN-AGN">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZUg-cl-WBP">
-                                <rect key="frame" x="6" y="293" width="229" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmT-9F-XD3">
-                                <rect key="frame" x="273" y="296" width="64" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Enviar"/>
-                                <connections>
-                                    <action selector="enviarMensajeTapped:" destination="cm8-wm-ReQ" eventType="touchUpInside" id="06k-aj-VmO"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YaJ-NB-Fz4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sfu-DN-AGN" firstAttribute="top" secondItem="YaJ-NB-Fz4" secondAttribute="top" id="4Sm-uC-DxV"/>
+                            <constraint firstItem="sfu-DN-AGN" firstAttribute="leading" secondItem="YaJ-NB-Fz4" secondAttribute="leading" id="KR3-aL-i3E"/>
+                            <constraint firstItem="sfu-DN-AGN" firstAttribute="trailing" secondItem="YaJ-NB-Fz4" secondAttribute="trailing" id="S0q-Ok-alb"/>
+                            <constraint firstItem="YaJ-NB-Fz4" firstAttribute="bottom" secondItem="sfu-DN-AGN" secondAttribute="bottom" id="yRS-0N-n2p"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6Ka-PK-XXO"/>
                     <connections>
                         <outlet property="listaUsuarios" destination="sfu-DN-AGN" id="IMw-nD-IpW"/>
-                        <outlet property="mensaje" destination="ZUg-cl-WBP" id="dhl-8p-Wlq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7o-oo-PHq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -278,7 +270,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="5I8-4n-eNH"/>
+        <segue reference="hW6-Px-iFa"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
