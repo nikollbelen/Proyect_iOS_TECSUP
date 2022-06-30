@@ -121,6 +121,7 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        imageView.layer.cornerRadius = imageView.bounds.height / 2
 
         // Do any additional setup after loading the view.
     }

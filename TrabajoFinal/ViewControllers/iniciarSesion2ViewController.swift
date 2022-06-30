@@ -27,6 +27,7 @@ class iniciarSesion2ViewController: UIViewController, GIDSignInDelegate {
     
     @IBOutlet weak var googleButton: UIButton!
     
+    var radius = 22
     
     @IBAction func iniciarSesionTapped(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
@@ -64,11 +65,20 @@ class iniciarSesion2ViewController: UIViewController, GIDSignInDelegate {
         
             }}}
     
+    @IBAction func registrarseTepped(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "crearusuariosegue", sender: nil)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance()?.delegate = self
+        
+        emailTextField.layer.cornerRadius = CGFloat(radius)
+        passwordTextField.layer.cornerRadius = CGFloat(radius)
+        googleButton.layer.cornerRadius = CGFloat(radius)
        
         // Do any additional setup after loading the view.
     }
