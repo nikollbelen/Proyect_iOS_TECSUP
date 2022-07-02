@@ -17,6 +17,9 @@
 		387130D22866400C009C2572 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 387130D02866400C009C2572 /* PostTableViewCell.xib */; };
 		387130D428665433009C2572 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387130D328665433009C2572 /* ImageService.swift */; };
 		387130D928668596009C2572 /* Home2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387130D828668596009C2572 /* Home2ViewController.swift */; };
+		68530C9D286FDA1900A6A4CE /* ViewControllerProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */; };
+		68530C9F286FE85C00A6A4CE /* inicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530C9E286FE85C00A6A4CE /* inicioViewController.swift */; };
+		68530CA1286FF08300A6A4CE /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA0286FF08300A6A4CE /* menuViewController.swift */; };
 		68626EC6285B9AEE00E18464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC5285B9AEE00E18464 /* AppDelegate.swift */; };
 		68626EC8285B9AEE00E18464 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC7285B9AEE00E18464 /* SceneDelegate.swift */; };
 		68626ECA285B9AEE00E18464 /* iniciarSesion2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC9285B9AEE00E18464 /* iniciarSesion2ViewController.swift */; };
@@ -40,6 +43,9 @@
 		387130D828668596009C2572 /* Home2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home2ViewController.swift; sourceTree = "<group>"; };
 		5A3557335975A210CD0FB577 /* Pods-TrabajoFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFinal.debug.xcconfig"; path = "Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal.debug.xcconfig"; sourceTree = "<group>"; };
 		63D2EA49ACA0FB3411F46B48 /* Pods-TrabajoFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrabajoFinal.release.xcconfig"; path = "Target Support Files/Pods-TrabajoFinal/Pods-TrabajoFinal.release.xcconfig"; sourceTree = "<group>"; };
+		68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProductos.swift; sourceTree = "<group>"; };
+		68530C9E286FE85C00A6A4CE /* inicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicioViewController.swift; sourceTree = "<group>"; };
+		68530CA0286FF08300A6A4CE /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		68626EC2285B9AEE00E18464 /* TrabajoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrabajoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68626EC5285B9AEE00E18464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68626EC7285B9AEE00E18464 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,9 @@
 				387130C928629F7F009C2572 /* elegirUsuarioViewController.swift */,
 				387130CD28663F58009C2572 /* homeViewController.swift */,
 				387130D828668596009C2572 /* Home2ViewController.swift */,
+				68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */,
+				68530C9E286FE85C00A6A4CE /* inicioViewController.swift */,
+				68530CA0286FF08300A6A4CE /* menuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -276,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				387130D928668596009C2572 /* Home2ViewController.swift in Sources */,
+				68530C9D286FDA1900A6A4CE /* ViewControllerProductos.swift in Sources */,
 				387130CE28663F58009C2572 /* homeViewController.swift in Sources */,
+				68530C9F286FE85C00A6A4CE /* inicioViewController.swift in Sources */,
 				68626ECA285B9AEE00E18464 /* iniciarSesion2ViewController.swift in Sources */,
 				387130D428665433009C2572 /* ImageService.swift in Sources */,
 				387130CA28629F7F009C2572 /* elegirUsuarioViewController.swift in Sources */,
@@ -285,6 +296,7 @@
 				68626EC8285B9AEE00E18464 /* SceneDelegate.swift in Sources */,
 				387130C828626195009C2572 /* Usuario.swift in Sources */,
 				387130C5286254D3009C2572 /* crearSesionViewController.swift in Sources */,
+				68530CA1286FF08300A6A4CE /* menuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

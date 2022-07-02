@@ -86,7 +86,7 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
                         let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.txtEmail.text!) se creo correctamente.", preferredStyle: .alert)
                         
                         let btnOK = UIAlertAction(title: "Aceptar", style: .default, handler: { (UIAlertAction) in
-                            self.performSegue(withIdentifier: "iniciarsesioncreate", sender: nil)
+                            self.performSegue(withIdentifier: "regresar", sender: nil)
                             
                         })
                         let cancel = UIAlertAction(title: "Cancel", style: .destructive, handler: { (UIAlertAction) -> Void in })
@@ -126,6 +126,11 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func regresarTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "regresar", sender: nil)
+    }
+    
     @IBAction func camaraTapped(_ sender: Any) {
         imagePicker.sourceType = .savedPhotosAlbum
         imagePicker.allowsEditing = false
@@ -139,6 +144,8 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
         //elegirContactoBoton.isEnabled = true
         imagePicker.dismiss(animated: true, completion: nil)
     }
+    
+    
     
 
     /*
