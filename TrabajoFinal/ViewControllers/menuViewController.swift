@@ -51,6 +51,7 @@ class menuViewController: UIViewController {
     
     
     @IBAction func ofertasTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "promocionSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,13 +59,16 @@ class menuViewController: UIViewController {
             
             let siguienteVC = segue.destination as! ViewControllerProductos
             siguienteVC.sucursal = sender as! Sucursal
-        }else{
+        }
+        else if (segue.identifier == "promocionSegue"){
+            print("asdasdasd")
+        }
+        else{
             let siguienteVC = segue.destination as! listaEmpleadosViewController
             siguienteVC.sucursal = sender as! Sucursal
-            
-            
         }
     }
+    
     
     /*
     // MARK: - Navigation
