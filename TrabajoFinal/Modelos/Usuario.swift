@@ -11,7 +11,9 @@ class Usuario{
     var email = ""
     var uid = ""
     var username = ""
+    var apellido = ""
     var imagenURL = ""
+    var gmail = ""
     /*
     init(uid:String,username:String,imagenURL:URL){
         self.uid = uid

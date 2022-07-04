@@ -10,8 +10,6 @@ target 'TrabajoFinal' do
   pod 'FirebaseStorage'
   pod 'FirebaseDatabase'
   pod 'SDWebImage'
-  pod 'FacebookCore'
-  pod 'FacebookLogin'
   pod 'GoogleSignIn'
-  pod 'Firebase/Analytics'
+  
 end

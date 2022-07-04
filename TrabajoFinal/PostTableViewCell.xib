@@ -75,6 +75,7 @@
             <accessibility key="accessibilityConfiguration" identifier="postCell"/>
             <connections>
                 <outlet property="apellidotext" destination="DjU-da-EQU" id="oRk-u2-H0T"/>
+                <outlet property="emailtxt" destination="fOO-xi-WHy" id="Fkk-8z-IcG"/>
                 <outlet property="imagentext" destination="Lhe-bQ-xs4" id="HP6-NJ-b90"/>
                 <outlet property="usuariotext" destination="b2F-VP-qNf" id="PXu-ah-4vn"/>
             </connections>

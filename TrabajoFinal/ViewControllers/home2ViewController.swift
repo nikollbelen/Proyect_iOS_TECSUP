@@ -47,8 +47,10 @@ class Home2ViewController: UIViewController,UITableViewDataSource,UITableViewDel
             print(snapshot)
         
         let usuario = Usuario()
-        usuario.email = (snapshot.value as! NSDictionary) ["username"] as! String
+        usuario.apellido = (snapshot.value as! NSDictionary) ["apellido"] as! String
+        usuario.username = (snapshot.value as! NSDictionary) ["username"] as! String
         usuario.imagenURL = (snapshot.value as! NSDictionary) ["imagenURL"] as! String
+        usuario.gmail = (snapshot.value as! NSDictionary) ["gmail"] as! String
         usuario.uid = snapshot.key
         self.usuarios.append(usuario)
         self.listaUsuarios.reloadData()

@@ -36,7 +36,7 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
     
     
     var username2 = "guido"
-    
+    //crear sesion para ingresar como administrador
     @IBAction func crearSssionTapped(_ sender: Any) {
         Auth.auth().signIn(withEmail: txtEmail.text!, password: txtPassword.text!) { (user, error) in
         print("Intentando Inicar Sesion")
@@ -66,6 +66,7 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
                                     let snap = ["username" : self.txtNombre.text!,"apellido" : self.txtApellido.text!,"gmail" : self.txtEmail.text!,"imagenURL": url?.absoluteString,"imagenID": imagenID]
                                     Database.database().reference().child("usuarios")
                                         .child(user!.user.uid).setValue(snap)
+                                    
                                     guard let enlaceURL = url else{
                                         self.mostrarAlerta(titulo: "Error", mensaje: "Se obtubo un error al obtener informacion de la imagen", accion: "Cancelar")
                                        
@@ -73,16 +74,13 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
                                         print("Ocurrio un error al obtener la informacion de imagen \(error)")
                                         return
                                     }
-                                    //self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: url?.absoluteString )
+                                    
                                 })
                                                         
                             }
                         }
-                        
-                        /*let snap = ["username" : self.txtNombre.text!,"gmail" : self.txtEmail.text!,"imagenURL": url?.absoluteString]
-                        Database.database().reference().child("usuarios")
-                            .child(user!.user.uid).setValue(snap)*/
-                        //.child("email").user!.user.email
+                        //Alerta
+                       
                         let alerta = UIAlertController(title: "Creacion de Usuario", message: "Usuario: \(self.txtEmail.text!) se creo correctamente.", preferredStyle: .alert)
                         
                         let btnOK = UIAlertAction(title: "Aceptar", style: .default, handler: { (UIAlertAction) in
@@ -97,8 +95,7 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
                     }
                 })
             }else{
-                /*print("Inicio de sesion exitoso")
-                self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)*/
+                //registro correcto
                 let alerta = UIAlertController(title: "Alerta", message: "Usuario: \(self.txtEmail.text!) Ya esta registrado.", preferredStyle: .alert)
                 
                 let cancel = UIAlertAction(title: "Aceptar", style: .destructive, handler: { (UIAlertAction) -> Void in })
@@ -109,6 +106,10 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
             }
         }
     }
+    
+    
+    
+    
     func mostrarAlerta(titulo: String, mensaje: String, accion: String) {
         let alerta = UIAlertController(title: titulo, message: mensaje, preferredStyle: .alert)
         let btnCANCELOK = UIAlertAction(title: accion, style: .default, handler: nil)
@@ -127,15 +128,20 @@ class crearSesionViewController:  UIViewController, UIImagePickerControllerDeleg
     }
     
     
+    //viaje por el outlet
     @IBAction func regresarTapped(_ sender: Any) {
         self.performSegue(withIdentifier: "regresar", sender: nil)
     }
     
+    
+    //funcion de carga de la imagen
     @IBAction func camaraTapped(_ sender: Any) {
         imagePicker.sourceType = .savedPhotosAlbum
         imagePicker.allowsEditing = false
         present(imagePicker, animated: true, completion:  nil)
     }
+    
+    //funcion para cargar la imagen de la galeria
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage

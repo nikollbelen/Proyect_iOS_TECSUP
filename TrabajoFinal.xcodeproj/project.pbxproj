@@ -20,12 +20,23 @@
 		68530C9D286FDA1900A6A4CE /* ViewControllerProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */; };
 		68530C9F286FE85C00A6A4CE /* inicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530C9E286FE85C00A6A4CE /* inicioViewController.swift */; };
 		68530CA1286FF08300A6A4CE /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA0286FF08300A6A4CE /* menuViewController.swift */; };
+		68530CA32870019D00A6A4CE /* sucursalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA22870019D00A6A4CE /* sucursalViewController.swift */; };
+		68530CA5287003D100A6A4CE /* crearSucursalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA4287003D100A6A4CE /* crearSucursalViewController.swift */; };
+		68530CA72870105D00A6A4CE /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA62870105D00A6A4CE /* File.swift */; };
+		68530CA92870108200A6A4CE /* Sucursal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CA82870108200A6A4CE /* Sucursal.swift */; };
+		68530CAB2870BA5D00A6A4CE /* menuPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CAA2870BA5D00A6A4CE /* menuPrincipalViewController.swift */; };
+		68530CAD2870EC2800A6A4CE /* crearEmpleadoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CAC2870EC2800A6A4CE /* crearEmpleadoViewController.swift */; };
+		68530CAF2870F2CE00A6A4CE /* crearProductoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CAE2870F2CE00A6A4CE /* crearProductoViewController.swift */; };
+		68530CB12870FB4400A6A4CE /* Productos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CB02870FB4400A6A4CE /* Productos.swift */; };
+		68530CB328710A6E00A6A4CE /* empledoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CB228710A6E00A6A4CE /* empledoViewController.swift */; };
+		68530CB528715A6400A6A4CE /* Empleados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68530CB428715A6400A6A4CE /* Empleados.swift */; };
 		68626EC6285B9AEE00E18464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC5285B9AEE00E18464 /* AppDelegate.swift */; };
 		68626EC8285B9AEE00E18464 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC7285B9AEE00E18464 /* SceneDelegate.swift */; };
 		68626ECA285B9AEE00E18464 /* iniciarSesion2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68626EC9285B9AEE00E18464 /* iniciarSesion2ViewController.swift */; };
 		68626ECD285B9AEE00E18464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68626ECB285B9AEE00E18464 /* Main.storyboard */; };
 		68626ECF285B9AF100E18464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68626ECE285B9AF100E18464 /* Assets.xcassets */; };
 		68626ED2285B9AF100E18464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68626ED0285B9AF100E18464 /* LaunchScreen.storyboard */; };
+		689D45142871E30C006D3835 /* listaEmpleadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D45132871E30C006D3835 /* listaEmpleadosViewController.swift */; };
 		8634565D8B197B4BD40FB44F /* Pods_TrabajoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBAEEA5DAC7CBDF1A7D4432 /* Pods_TrabajoFinal.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +57,16 @@
 		68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProductos.swift; sourceTree = "<group>"; };
 		68530C9E286FE85C00A6A4CE /* inicioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicioViewController.swift; sourceTree = "<group>"; };
 		68530CA0286FF08300A6A4CE /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		68530CA22870019D00A6A4CE /* sucursalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sucursalViewController.swift; sourceTree = "<group>"; };
+		68530CA4287003D100A6A4CE /* crearSucursalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crearSucursalViewController.swift; sourceTree = "<group>"; };
+		68530CA62870105D00A6A4CE /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		68530CA82870108200A6A4CE /* Sucursal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sucursal.swift; sourceTree = "<group>"; };
+		68530CAA2870BA5D00A6A4CE /* menuPrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuPrincipalViewController.swift; sourceTree = "<group>"; };
+		68530CAC2870EC2800A6A4CE /* crearEmpleadoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crearEmpleadoViewController.swift; sourceTree = "<group>"; };
+		68530CAE2870F2CE00A6A4CE /* crearProductoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crearProductoViewController.swift; sourceTree = "<group>"; };
+		68530CB02870FB4400A6A4CE /* Productos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Productos.swift; sourceTree = "<group>"; };
+		68530CB228710A6E00A6A4CE /* empledoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empledoViewController.swift; sourceTree = "<group>"; };
+		68530CB428715A6400A6A4CE /* Empleados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empleados.swift; sourceTree = "<group>"; };
 		68626EC2285B9AEE00E18464 /* TrabajoFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrabajoFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68626EC5285B9AEE00E18464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68626EC7285B9AEE00E18464 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +75,7 @@
 		68626ECE285B9AF100E18464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68626ED1285B9AF100E18464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68626ED3285B9AF100E18464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		689D45132871E30C006D3835 /* listaEmpleadosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listaEmpleadosViewController.swift; sourceTree = "<group>"; };
 		6DBAEEA5DAC7CBDF1A7D4432 /* Pods_TrabajoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +119,13 @@
 				68530C9C286FDA1900A6A4CE /* ViewControllerProductos.swift */,
 				68530C9E286FE85C00A6A4CE /* inicioViewController.swift */,
 				68530CA0286FF08300A6A4CE /* menuViewController.swift */,
+				68530CA22870019D00A6A4CE /* sucursalViewController.swift */,
+				68530CA4287003D100A6A4CE /* crearSucursalViewController.swift */,
+				68530CAA2870BA5D00A6A4CE /* menuPrincipalViewController.swift */,
+				68530CAC2870EC2800A6A4CE /* crearEmpleadoViewController.swift */,
+				68530CAE2870F2CE00A6A4CE /* crearProductoViewController.swift */,
+				68530CB228710A6E00A6A4CE /* empledoViewController.swift */,
+				689D45132871E30C006D3835 /* listaEmpleadosViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -105,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				387130C728626195009C2572 /* Usuario.swift */,
+				68530CA62870105D00A6A4CE /* File.swift */,
+				68530CA82870108200A6A4CE /* Sucursal.swift */,
+				68530CB02870FB4400A6A4CE /* Productos.swift */,
+				68530CB428715A6400A6A4CE /* Empleados.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -284,19 +317,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68530CA32870019D00A6A4CE /* sucursalViewController.swift in Sources */,
 				387130D928668596009C2572 /* Home2ViewController.swift in Sources */,
 				68530C9D286FDA1900A6A4CE /* ViewControllerProductos.swift in Sources */,
+				68530CA92870108200A6A4CE /* Sucursal.swift in Sources */,
+				68530CAB2870BA5D00A6A4CE /* menuPrincipalViewController.swift in Sources */,
 				387130CE28663F58009C2572 /* homeViewController.swift in Sources */,
+				68530CA5287003D100A6A4CE /* crearSucursalViewController.swift in Sources */,
+				68530CA72870105D00A6A4CE /* File.swift in Sources */,
 				68530C9F286FE85C00A6A4CE /* inicioViewController.swift in Sources */,
 				68626ECA285B9AEE00E18464 /* iniciarSesion2ViewController.swift in Sources */,
 				387130D428665433009C2572 /* ImageService.swift in Sources */,
 				387130CA28629F7F009C2572 /* elegirUsuarioViewController.swift in Sources */,
+				68530CAF2870F2CE00A6A4CE /* crearProductoViewController.swift in Sources */,
 				387130D12866400C009C2572 /* PostTableViewCell.swift in Sources */,
 				68626EC6285B9AEE00E18464 /* AppDelegate.swift in Sources */,
 				68626EC8285B9AEE00E18464 /* SceneDelegate.swift in Sources */,
 				387130C828626195009C2572 /* Usuario.swift in Sources */,
+				68530CB12870FB4400A6A4CE /* Productos.swift in Sources */,
 				387130C5286254D3009C2572 /* crearSesionViewController.swift in Sources */,
+				68530CB528715A6400A6A4CE /* Empleados.swift in Sources */,
+				68530CAD2870EC2800A6A4CE /* crearEmpleadoViewController.swift in Sources */,
 				68530CA1286FF08300A6A4CE /* menuViewController.swift in Sources */,
+				68530CB328710A6E00A6A4CE /* empledoViewController.swift in Sources */,
+				689D45142871E30C006D3835 /* listaEmpleadosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

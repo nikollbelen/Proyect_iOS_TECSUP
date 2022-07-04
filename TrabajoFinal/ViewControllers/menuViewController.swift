@@ -6,17 +6,36 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class menuViewController: UIViewController {
-
+    var id_user = ""
+    
+    var sucursal = Sucursal()
+    
+    @IBOutlet weak var nombreScl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        nombreScl.text = sucursal.sucursal
+        print(id_user)
 
         // Do any additional setup after loading the view.
     }
     
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        Database.database().reference().child("usuarios").child((Auth.auth().currentUser?.uid)!).child("sucursales").child(sucursal.id)//.removeValue()
+    
+       
+            print("se elimino correctamente")
+        
+    }
+    
+    
+    
     @IBAction func empleadosTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "empleadossegue", sender: nil)
+        self.performSegue(withIdentifier: "empleadosegue", sender: sucursal)
         
     }
     
@@ -27,10 +46,24 @@ class menuViewController: UIViewController {
     
     
     @IBAction func ubicacionTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "ProductosSegue", sender: sucursal)
     }
     
     
     @IBAction func ofertasTapped(_ sender: Any) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ProductosSegue" {
+            
+            let siguienteVC = segue.destination as! ViewControllerProductos
+            siguienteVC.sucursal = sender as! Sucursal
+        }else{
+            let siguienteVC = segue.destination as! listaEmpleadosViewController
+            siguienteVC.sucursal = sender as! Sucursal
+            
+            
+        }
     }
     
     /*
