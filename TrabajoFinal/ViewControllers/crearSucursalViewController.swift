@@ -57,5 +57,9 @@ class crearSucursalViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func AgregarUbicacion(_ sender: Any) {
+        self.performSegue(withIdentifier: "ubicacionSegue", sender: nil)
+    }
+    
 }

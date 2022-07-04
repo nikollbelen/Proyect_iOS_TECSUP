@@ -40,6 +40,8 @@
 		689D45162872C4C2006D3835 /* AgregarPromocionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D45152872C4C2006D3835 /* AgregarPromocionViewController.swift */; };
 		689D45182872C4FC006D3835 /* PromocionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D45172872C4FC006D3835 /* PromocionesViewController.swift */; };
 		689D451A2872C532006D3835 /* Promocion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D45192872C532006D3835 /* Promocion.swift */; };
+		689D451C28734821006D3835 /* mapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689D451B28734821006D3835 /* mapaViewController.swift */; };
+		689D451E287348EF006D3835 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689D451D287348EF006D3835 /* MapKit.framework */; };
 		8634565D8B197B4BD40FB44F /* Pods_TrabajoFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBAEEA5DAC7CBDF1A7D4432 /* Pods_TrabajoFinal.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +84,8 @@
 		689D45152872C4C2006D3835 /* AgregarPromocionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPromocionViewController.swift; sourceTree = "<group>"; };
 		689D45172872C4FC006D3835 /* PromocionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromocionesViewController.swift; sourceTree = "<group>"; };
 		689D45192872C532006D3835 /* Promocion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promocion.swift; sourceTree = "<group>"; };
+		689D451B28734821006D3835 /* mapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapaViewController.swift; sourceTree = "<group>"; };
+		689D451D287348EF006D3835 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		6DBAEEA5DAC7CBDF1A7D4432 /* Pods_TrabajoFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrabajoFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689D451E287348EF006D3835 /* MapKit.framework in Frameworks */,
 				8634565D8B197B4BD40FB44F /* Pods_TrabajoFinal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +114,7 @@
 		2E11BE5E1D21346768BBEEB0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				689D451D287348EF006D3835 /* MapKit.framework */,
 				6DBAEEA5DAC7CBDF1A7D4432 /* Pods_TrabajoFinal.framework */,
 			);
 			name = Frameworks;
@@ -134,6 +140,7 @@
 				689D45132871E30C006D3835 /* listaEmpleadosViewController.swift */,
 				689D45152872C4C2006D3835 /* AgregarPromocionViewController.swift */,
 				689D45172872C4FC006D3835 /* PromocionesViewController.swift */,
+				689D451B28734821006D3835 /* mapaViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -339,6 +346,7 @@
 				689D45162872C4C2006D3835 /* AgregarPromocionViewController.swift in Sources */,
 				689D451A2872C532006D3835 /* Promocion.swift in Sources */,
 				68626ECA285B9AEE00E18464 /* iniciarSesion2ViewController.swift in Sources */,
+				689D451C28734821006D3835 /* mapaViewController.swift in Sources */,
 				387130D428665433009C2572 /* ImageService.swift in Sources */,
 				387130CA28629F7F009C2572 /* elegirUsuarioViewController.swift in Sources */,
 				68530CAF2870F2CE00A6A4CE /* crearProductoViewController.swift in Sources */,

@@ -40,13 +40,12 @@ class menuViewController: UIViewController {
     }
     
     @IBAction func productosTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "productossegue", sender: nil)
+        self.performSegue(withIdentifier: "ProductosSegue", sender: sucursal)
     }
     
     
     
     @IBAction func ubicacionTapped(_ sender: Any) {
-        self.performSegue(withIdentifier: "ProductosSegue", sender: sucursal)
     }
     
     
@@ -68,6 +67,7 @@ class menuViewController: UIViewController {
             siguienteVC.sucursal = sender as! Sucursal
         }
     }
+    
     
     
     /*
